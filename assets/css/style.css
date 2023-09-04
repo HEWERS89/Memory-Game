@@ -2,4 +2,29 @@
 
 body {
     background: #EB9853 ;
+    margin:0;
+}
+
+.circles {
+    margin:50px auto;
+    width:max-content;
+    display: grid;
+    grid-template-columns: repeat(2 , 100px);
+    gap: 20px;
+
+}
+
+.circle {
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #000;
+}
+
+div .circle:hover {
+
+}
+
+button { 
+
 }
