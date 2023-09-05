@@ -56,8 +56,8 @@ div .circle:hover {
 }
 
 
-button { 
-
+button {
+    font-family:'Creepster', cursive;
 }
 
 
@@ -82,5 +82,11 @@ button {
     padding-left: 40%;
 }
 
-#name-submit-btn {
+#login-input{
+    
 }
+
+#enter-btn {
+   
+}
+
