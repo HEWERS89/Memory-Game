@@ -1,16 +1,31 @@
-
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+} 
 
 body {
-    background: #EB9853 ;
     margin:0;
 }
 
+
+
+h1 {
+    justify-self: center;
+    margin-top: 40px;
+    padding: 20px;
+    padding-left: 10%;
+
+
+}
+
+/*----------- Game ----------*/
 .circles {
     margin:50px auto;
     width:max-content;
     display: grid;
     grid-template-columns: repeat(2 , 100px);
-    gap: 20px;
+    gap: 40px;
 
 }
 
@@ -25,6 +40,41 @@ div .circle:hover {
 
 }
 
+
+/*----------- Game Info ----------*/
+
+#ghost {
+    border: 50%;
+    padding-left: 20%;
+    height:40px !important;
+    width: 40px !important;
+}
+
+
 button { 
 
 }
+
+
+
+
+
+
+
+
+
+/*----------- Log In page ----------*/
+
+.login-title{
+    display: flex;
+    padding-top: 20%;
+    padding-left: 40%;
+}
+
+#login-box{
+    display: flex;
+    padding-top: 30%;
+    padding-left: 40%;
+}
+
+#name-submit-btn {
