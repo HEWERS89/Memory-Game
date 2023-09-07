@@ -10,6 +10,7 @@
     <meta name="author" content="H.Ewers">
     <script src="https://kit.fontawesome.com/99cb06e1b2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    
        
     <title>Spooky Games</title>
 
@@ -19,40 +20,55 @@
 
 <main>
     
-    <div class= gameaudios>
-<audio #noise1>
-    <source></source>
-</audio>
- <audio #noise2>
-    <source></source>
-</audio>
- <audio #noise3>
-    <source></source>
-</audio>
- <audio #noise4>
-    <source></source>
- </audio>
-</div>
 
-<div class="circles">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>  
-</div>
 
-    <div id= ghost>
+
+<div class="container">
+    <div class="row">
+
+      <div type="button" id="one" class="btn one">
+        <audio #noise1>
+            <source></source>
+      </div>
+
+      <div type="button" id="two" class="btn two">
+        <audio #noise2>
+            <source></source>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="three" class="btn three">
+        <audio #noise3>
+            <source></source>
+
+      </div>
+      <div type="button" id="four" class="btn four">
+        <audio #noise4>
+            <source></source>
+      </div>
+
+    </div>
+
+ </div>
+  
+  <div class="count">00 
+
+  </div>
+
+
+    <div class="ghost" >
         <i class="fa-solid fa-ghost fa-beat fa-lg" style="color: #e68a0a;"></i>
     </div>
-    
 
-    <p> Game counter</p>
 
-    <p>Timer</p>
-
-    <button> Start</button>
+    <button id= "start-game" onclick= 'startGame()'>Start Game</button>
+    </button>
 </main>
+
         
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
+<script src="memoryGame.js"></script>
 </body>
 </html>

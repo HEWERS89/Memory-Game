@@ -4,44 +4,63 @@
 
 *{
     box-sizing: border-box;
-    margin:0;
-    padding: 0;
 } 
-
-body {
-    margin:0;
-}
-
-
 
 h1 {
     justify-self: center;
-    margin-top: 40px;
-    padding: 20px;
-    padding-left: 10%;
+    margin-top: 3em;
+    padding: 1em;
+    padding-left: 3em;
     font-family: 'Creepster', cursive;
-
-
+    color:  #e68a0a;
 }
 
 /*----------- Game ----------*/
-.circles {
+.row {
     margin:50px auto;
     width:max-content;
     display: grid;
     grid-template-columns: repeat(2 , 100px);
-    gap: 40px;
+    gap: 10em;
 
 }
 
-.circle {
-    height:100px;
-    width: 100px;
+.one {
+    height:10em;
+    width: 10em;
     border-radius: 50%;
-    background: #000;
+    background: #F75F1C;
+    border: 0.5em ridge black;
 }
 
-div .circle:hover {
+.two{
+    height:10em;
+    width: 10em;
+    border-radius: 50%;
+    background: #881EE4;
+    border: 0.5em ridge black;
+}
+
+.three {
+    height:10em;
+    width: 10em;
+    border-radius: 50%;
+    background: #85E21F;
+    border: 0.5em ridge black;
+}
+
+.four {
+    height:10em;
+    width: 10em;
+    border-radius: 50%;
+    background:#FF9A00 ;
+    border: 0.5em ridge black;
+}
+
+
+
+.btn:hover {
+    box-shadow: 0.5em 1em 0.5em black
 
 }
 
@@ -50,17 +69,30 @@ div .circle:hover {
 
 #ghost {
     border: 50%;
-    padding-left: 20%;
+    display: flex !important;
+    justify-content: space-between;
     height:40px !important;
     width: 40px !important;
 }
 
 
-button {
+button{
     font-family:'Creepster', cursive;
+    color: #e68a0a;
+    
 }
 
+#start-game{
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
 
+.count {
+    display: flex;
+    justify-content: center;
+    color: #e68a0a;
+}
 
 
 

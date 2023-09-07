@@ -8,3 +8,4 @@ function setPlayer(event) {
     localStorage.setItem('player', input.value);
     window.location = 'memoryGame.html';
 }
+
