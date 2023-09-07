@@ -4,7 +4,13 @@
 
 *{
     box-sizing: border-box;
+    margin:0;
+    background: darkslategrey;
 } 
+
+html {
+    margin: 0;
+}
 
 h1 {
     justify-self: center;
@@ -77,16 +83,14 @@ h1 {
 
 
 button{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     font-family:'Creepster', cursive;
     color: #e68a0a;
-    
+     
 }
 
-#start-game{
-    margin:0;
-    display: flex;
-    justify-content: center;
-}
 
 .count {
     display: flex;
