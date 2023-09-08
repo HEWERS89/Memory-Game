@@ -4,13 +4,18 @@
 
 *{
     box-sizing: border-box;
-    margin:0;
-    background: darkslategrey;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+  
+html{
+    background-image:url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 } 
 
-html {
-    margin: 0;
-}
 
 h1 {
     justify-self: center;
@@ -21,53 +26,56 @@ h1 {
     color:  #e68a0a;
 }
 
-/*----------- Game ----------*/
+
+
+/*----------- Game Buttons----------*/
 .row {
     margin:50px auto;
     width:max-content;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     grid-template-columns: repeat(2 , 100px);
-    gap: 10em;
+    gap: 5em;
 
 }
 
-.one {
+#top-left-one {
     height:10em;
     width: 10em;
     border-radius: 50%;
     background: #F75F1C;
-    border: 0.5em ridge black;
+    border: 0.2em ridge #F75F1C;
 }
 
-.two{
+#top-right-two{
     height:10em;
     width: 10em;
     border-radius: 50%;
     background: #881EE4;
-    border: 0.5em ridge black;
+    border: 0.2em ridge #881EE4;
 }
 
-.three {
+#bottom-left-three {
     height:10em;
     width: 10em;
     border-radius: 50%;
     background: #85E21F;
-    border: 0.5em ridge black;
+    border: 0.2em ridge #85E21F;
 }
 
-.four {
+#bottom-right-four {
     height:10em;
     width: 10em;
     border-radius: 50%;
     background:#FF9A00 ;
-    border: 0.5em ridge black;
+    border: 0.2em ridge #FF9A00;
 }
 
-
-
 .btn:hover {
-    box-shadow: 0.5em 1em 0.5em black
-
+    box-shadow: 1px 1px 3px 4px rgb(248, 255, 255);
+    box-sizing: border-box;
 }
 
 
@@ -81,8 +89,9 @@ h1 {
     width: 40px !important;
 }
 
+/*------Start Game Button-------*/
 
-button{
+#start-game{
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -91,6 +100,7 @@ button{
      
 }
 
+/*-------Game Counter--------*/
 
 .count {
     display: flex;

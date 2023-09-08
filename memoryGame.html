@@ -10,28 +10,26 @@
     <meta name="author" content="H.Ewers">
     <script src="https://kit.fontawesome.com/99cb06e1b2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    
-       
+
     <title>Spooky Games</title>
 
 </head>
-<body>    
+<div class="background-container">
+</div>
+
     <h1> Spooky Memory Game </h1>
-
-<main>
     
-
-
+<main>
 
 <div class="container">
     <div class="row">
 
-      <div type="button" id="one" class="btn one">
+      <div type="button" id="top-left-one" class="btn one">
         <audio #noise1>
             <source></source>
       </div>
 
-      <div type="button" id="two" class="btn two">
+      <div type="button" id="top-right-two" class="btn two">
         <audio #noise2>
             <source></source>
       </div>
@@ -39,12 +37,12 @@
 
     <div class="row">
 
-      <div type="button" id="three" class="btn three">
+      <div type="button" id="bottom-left-three" class="btn three">
         <audio #noise3>
             <source></source>
 
       </div>
-      <div type="button" id="four" class="btn four">
+      <div type="button" id="bottom-right-four" class="btn four">
         <audio #noise4>
             <source></source>
       </div>
@@ -57,14 +55,16 @@
 
   </div>
 
-
     <div class="ghost" >
         <i class="fa-solid fa-ghost fa-beat fa-lg" style="color: #e68a0a;"></i>
     </div>
 
 
+
     <button id="start-game" onclick='startGame()'>Start Game</button>
     </button>
+
+
 </main>
 
         
