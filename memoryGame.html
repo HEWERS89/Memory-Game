@@ -14,35 +14,39 @@
     <title>Spooky Games</title>
 
 </head>
+
 <div class="background-container">
 </div>
 
-    <h1> Spooky Memory Game </h1>
+<header>
+  <h1> Spooky Memory Game </h1>
+  </header>
+<body>
 
 <main>
-
 <div class="container">
     <div class="row">
 
-      <div type="button" id="top-left-one" class="btn one">
+      <div type="button" id="top-left" class="btn one">
         <audio #noise1>
             <source></source>
       </div>
 
-      <div type="button" id="top-right-two" class="btn two">
+      <div type="button" id="top-right" class="btn two">
         <audio #noise2>
             <source></source>
       </div>
+
     </div>
 
     <div class="row">
 
-      <div type="button" id="bottom-left-three" class="btn three">
+      <div type="button" id="bottom-left" class="btn three">
         <audio #noise3>
             <source></source>
-
       </div>
-      <div type="button" id="bottom-right-four" class="btn four">
+
+      <div type="button" id="bottom-right" class="btn four">
         <audio #noise4>
             <source></source>
       </div>
@@ -50,20 +54,22 @@
     </div>
 
  </div>
+  
+ <div class="left-container">
 
- 
  <div class="ghost" >
   <i class="fa-solid fa-ghost fa-beat fa-lg" style="color: #e68a0a;"></i>
 </div>
-
-<div class="count">00 
-  </div>
-
+ 
+  <div class="count">00 
+    </div>
   <button id="start-game" onclick='startGame()'>Start Game
-  </button>
+    </button>
+</div>
+</div>
+ 
 
 </main>
-
         
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
 <script src="memoryGame.js"></script>
