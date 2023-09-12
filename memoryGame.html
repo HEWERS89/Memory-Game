@@ -9,6 +9,7 @@
     <meta name="keywords" content="Memory Game, Halloween Memory Game, Light Memory Game, Halloween">
     <meta name="author" content="H.Ewers">
     <script src="https://kit.fontawesome.com/99cb06e1b2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Spooky Games</title>
@@ -21,18 +22,18 @@
 <header>
   <h1> Spooky Memory Game </h1>
   </header>
+  
 <body>
 
 <main>
-<div class="container">
+<div class="game_container">
     <div class="row">
-
-      <div type="button" id="top-left" class="btn one">
+      <div  id="top-left" class="game_btn">
         <audio #noise1>
             <source></source>
       </div>
 
-      <div type="button" id="top-right" class="btn two">
+      <div id="top-right" class="game_btn">
         <audio #noise2>
             <source></source>
       </div>
@@ -41,18 +42,16 @@
 
     <div class="row">
 
-      <div type="button" id="bottom-left" class="btn three">
+      <div id="bottom-left" class="game_btn">
         <audio #noise3>
             <source></source>
       </div>
 
-      <div type="button" id="bottom-right" class="btn four">
+      <div  id="bottom-right" class="game_btn" >
         <audio #noise4>
             <source></source>
       </div>
-
     </div>
-
  </div>
   
  <div class="left-container">
@@ -61,9 +60,9 @@
   <i class="fa-solid fa-ghost fa-beat fa-lg" style="color: #e68a0a;"></i>
 </div>
  
-  <div class="count">00 
+  <div class="level">00
     </div>
-  <button id="start-game" onclick='startGame()'>Start Game
+  <button id="start" >Start Game
     </button>
 </div>
 </div>
@@ -72,6 +71,7 @@
 </main>
         
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
-<script src="memoryGame.js"></script>
+
+<script src="assets/memoryGame.js"></script>
 </body>
 </html>

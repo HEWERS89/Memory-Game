@@ -40,9 +40,9 @@ h1 {
 
 /*----------- Game Buttons----------*/
 .row{
-    
     padding-top: 5em;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -81,7 +81,7 @@ h1 {
     border: 0.2em ridge #FF9A00;
 }
 
-.btn:hover {
+.game_btn:hover {
     box-shadow: 1px 1px 3px 4px rgb(248, 255, 255);
     box-sizing: border-box;
 }
@@ -103,7 +103,7 @@ div.left-container{
 
 /*------Start Game Button-------*/
 
-#start-game{
+#start{
     font-family:'Creepster', cursive;
     background-color: black;
     color: #e68a0a;
@@ -114,7 +114,7 @@ div.left-container{
 }
 
 /*-------Game Counter--------*/
-.count {
+.level {
     display: flex;
     justify-content: center;
     color: #e68a0a;
